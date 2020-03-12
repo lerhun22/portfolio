@@ -1,2 +1,33 @@
 /* CSS Document */
 
+body{
+    font-family: arial;
+}
+
+header {
+    height: 120px;
+    background: #efefef;
+}
+
+header a {
+    display:block; /* transform inline en block */
+    margin:10px;
+    background: #4BB918;
+    text-decoration: none; /*Enlever la barre de soulignement du lien */
+    text-align: center;
+    color:white;
+}
+
+header a:hover, a:active{
+    text-decoration: none; /*Enlever la barre de soulignement du lien */
+    background-color: black;
+    color:yellow;
+}
+
+nav li{
+    float:center;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px 5px;
+    color: blue;
+}
