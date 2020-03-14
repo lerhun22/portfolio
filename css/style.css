@@ -26,6 +26,12 @@ body{
     font-family: cestnormal,arial,sans-serif;
 }
 
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* pas default, l'élement lien est souligné au passage de la souris */
 /* Attention pas d'espace entre l'élément et la propriété */
 a, a:hover, a:focus{
@@ -54,4 +60,111 @@ header li{
 
 header nav{
     font-size: .9em;
+}
+
+/*section presentation */
+
+section h1{
+    display: block;
+    padding: 10px;
+    font-family: arial;
+    color: brown;
+    font-weight: 600;
+    line-height: 1.5 em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+section p{
+    padding: 0 25px 10px;
+    border-bottom-style: inset;
+    border-bottom-style: solid;
+    border-bottom-color: brown;
+    border-width: thin;
+}
+/* section article */
+
+.articles {
+    margin-bottom: :30px;
+    margin-top: 30px;
+    border-radius:7px;
+    border-bottom: 2px solid #ddd;
+    background: #fff;
+    
+}
+article img{
+    border-radius: : 7px 7px 0;
+}
+
+articles h1, articles a, articles p{
+    margin:20px;
+}
+
+articles h1{
+    font-weight: bold;
+    color:#333;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+articles p{
+    color:#555;
+    line-height:1.4em;
+}
+
+article a {
+    display:block;
+    background: #5fcf80;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 2px solid #4ca666;
+}
+
+/* affichage pour les tablettes */
+
+@media (min-width: 768px){
+    header h1 {
+        text-align: left;
+    }
+    header ul {
+        float: right;
+    }
+    
+    header li {
+        float: left;
+    }
+    
+    header li + li {
+        margin-left: 15px;
+    }
+    
+    section {
+        text-align: left;
+    }
+    
+    /* empécher */
+    .article div:nth-child(2n+1) {
+        clear:left;
+    }
+}
+        
+@media (min-width: 992px){
+    .article div:nth-child(2n+1) {
+        clear:none;
+    }
+    
+    .article div:nth-child(3n+1) {
+        clear:left;
+    }   
+    
+    article img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+    }
+    
+    article:hover img{
+        -webkit-filter: none;
+        filter: none;
+    } 
 }

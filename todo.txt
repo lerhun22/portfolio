@@ -1,0 +1,10 @@
++ http://via.placeholder.com/640x360
+- https://loremflickr.com/640/360
+- https://placeit.net
+- https://placebeard.it
+- https://picsum.photos
+- https://github.com/lkcampbell/brackets-lorem-ipsum
+- https://baconmockup.com/1080/200/
+
+# Liens utiles
+
